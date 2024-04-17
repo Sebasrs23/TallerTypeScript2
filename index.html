@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Series</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .navbar {
+            background-color: #41a0b7;
+            color: black;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            padding: 0.3%;
+            justify-content: flex-start;
+        }
+
+        .navbar img {
+            width: 30px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    </br>
+    <div class="navbar">
+        <img src="./img/logo.png" alt="Logo" style="width: 5%; margin-right: 10px;">
+        <h5 class="m-0"> Series</h5>
+    </div>
+    </br>
+        <div class="row">
+            <div class="col-md-8">            
+                <table class="table table-striped" id="tabla-series">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Channel</th>
+                            <th>Seasons</th>
+                        </tr>
+                    </thead>
+
+                    <tbody></tbody>
+
+                </table>
+                <h6 id="sumSeasons"></h6>
+            </div>
+            <div class="col-md-4">
+                <!-- Detalle de la serie -->
+                <div class="card" id="detalle-serie">
+                    <div class="card-body">
+                        <!-- Clase "img-fluid" de Bootstrap para hacer la imagen responsive -->
+                        <img src="img/logo.png" id="imgLogo" class="img-fluid" style="padding: 0 !important; margin: 0 !important; width: 50%;" alt="Logo">
+                        <h5 class="card-title mt-3">Detalle de la serie</h5>
+                        <p class="card-text">Selecciona una serie para ver el detalle.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
